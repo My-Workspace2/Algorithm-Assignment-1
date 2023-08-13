@@ -11,7 +11,7 @@ public class Algo8_4 {
 
     for(int i=0; i<numB.length; i++)
     {
-        num1[i] =numB[i] /numA[i] ;
+        num1[i] =numB[i] -numA[i] ;
     }
 
     System.out.print("numB/numA :{");

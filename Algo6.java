@@ -28,7 +28,7 @@ public class Algo6 {
 
         for (int i=0;i<words.length/2-p; i++)
         {
-             String k;
+            String k;
 
             k =words[i] ;
             words[i] = words[j] ;
