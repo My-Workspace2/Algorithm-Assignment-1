@@ -7,17 +7,18 @@ public class Algo5 {
     public static void main(String[] args) {
 
         String text;
+        loop:
         do{
         System.out.print("Enter thr text : ") ;
-        text =scanner.nextLine().strip();
+        text =scanner.nextLine().strip();  // here we want to validate the ASCII as well
 
         if(text.isBlank())
         {
             continue;
         }
 
-        char[] chars =text.toCharArray() ;
-
+        char[] chars =text.toCharArray() ; // ASCII should be in 0-128  there for need to cheack the chars[i] <128 as well
+                                        
         int j=chars.length-1 ;
 
         int p =0;
@@ -28,8 +29,8 @@ public class Algo5 {
 
         for (int i=0;i<chars.length/2-p; i++)
         {
+            
              char k;
-
             k =chars[i] ;
             chars[i] = chars[j] ;
             chars[j]=k ;

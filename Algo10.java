@@ -21,7 +21,7 @@ public class Algo10 {
 
       
 
-        if(TeleNum.substring(0,4).equals("+94 ") )
+        if(TeleNum.substring(0,4).equals("+94 ") )   //TeleNum.statwith("+94 ")
         {
             System.out.println("inside if ");
             int valid =1;
@@ -43,7 +43,7 @@ public class Algo10 {
                 if (!Character.isDigit(TeleNum.charAt(i))) {
                     System.out.println("Invalid phone number.");
                     valid =0;
-                    break;
+                    break;q
 
                 }
 
